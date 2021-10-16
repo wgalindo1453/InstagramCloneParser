@@ -9,20 +9,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <item
-        android:id="@+id/miActionProgress"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topNavigation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orderInCategory="100"
-        android:title="Loading..."
-        android:visible="false"
-        app:actionLayout="@layout/action_view_progress"
-        app:showAsAction="always" />
+        android:layout_height="40dp"
+        android:layout_above="@id/flContainer"
+        android:layout_alignParentTop="true"
+        app:itemBackground="@android:color/transparent"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        app:menu="@menu/menu_top_navigation" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <FrameLayout
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="600dp"
         android:layout_above="@id/bottomNavigation" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -30,6 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/transparent"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
         app:menu="@menu/menu_bottom_navigation" />
 
 </RelativeLayout>
