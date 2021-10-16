@@ -1,2 +1,3 @@
-rootProject.name = "InstagramCloneParser"
 include ':app'
+rootProject.name = "InstagramCloneParser"
+
