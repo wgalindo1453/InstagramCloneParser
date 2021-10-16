@@ -5,16 +5,13 @@
     <item
         android:id="@+id/btnCamera"
         android:icon="@drawable/camera_shadow_fill"
-        android:title="Camera"
         app:showAsAction="always" />
     <item
         android:id="@+id/btnC"
         android:icon="@drawable/nux_dayone_landing_logo"
-        android:title="logo"
         app:showAsAction="always" />
     <item
         android:id="@+id/btnComp"
         android:icon="@drawable/nav_inbox_paper_plane"
-        android:title="Compose"
         app:showAsAction="always" />
 </menu>
