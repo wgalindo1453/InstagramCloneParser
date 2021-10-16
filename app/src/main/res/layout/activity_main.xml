@@ -9,6 +9,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <item
+        android:id="@+id/miActionProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orderInCategory="100"
+        android:title="Loading..."
+        android:visible="false"
+        app:actionLayout="@layout/action_view_progress"
+        app:showAsAction="always" />
+
     <FrameLayout
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
